@@ -1,0 +1,25 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    environment:
+      flutter: "3.0.0"  # Assurez-vous de spécifier une version compatible avec Dart SDK 3.0.0
+      xcode: latest
+      cocoapods: default
+
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+          
+      - name: Run tests
+        script: |
+          flutter test
+
+      - name: Build iOS app
+        script: |
+          flutter build ios --release
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
