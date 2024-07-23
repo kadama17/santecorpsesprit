@@ -646,34 +646,34 @@ class _DetailsLivreWidgetState extends State<DetailsLivreWidget>
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[0]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '8wf81krl' /* www.amazon.fr */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF232F3E),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Color(0xFF29154A),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    // FFButtonWidget(
+                    //   onPressed: () async {
+                    //     await launchURL(widget.livre!.liens[0]);
+                    //   },
+                    //   text: FFLocalizations.of(context).getText(
+                    //     '8wf81krl' /* www.amazon.fr */,
+                    //   ),
+                    //   options: FFButtonOptions(
+                    //     width: double.infinity,
+                    //     height: 40.0,
+                    //     padding:
+                    //         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //     iconPadding:
+                    //         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //     color: Color(0xFF232F3E),
+                    //     textStyle:
+                    //         FlutterFlowTheme.of(context).titleSmall.override(
+                    //               fontFamily: 'Readex Pro',
+                    //               color: Colors.white,
+                    //             ),
+                    //     elevation: 3.0,
+                    //     borderSide: BorderSide(
+                    //       color: Color(0xFF29154A),
+                    //       width: 1.0,
+                    //     ),
+                    //     borderRadius: BorderRadius.circular(8.0),
+                    //   ),
+                    // ),
                     FFButtonWidget(
                       onPressed: () async {
                         await launchURL(widget.livre!.liens[1]);

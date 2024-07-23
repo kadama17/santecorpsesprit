@@ -182,32 +182,32 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ].divide(SizedBox(height: 5.0)),
                               ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'ch1mfgpb' /* Disponible dans */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                  ),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.asset(
-                                      'assets/images/playstore_(1).png',
-                                      width: 90.0,
-                                      height: 90.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ].divide(SizedBox(height: 5.0)),
-                              ),
+                              // Column(
+                              //   mainAxisSize: MainAxisSize.max,
+                              //   children: [
+                              //     Text(
+                              //       FFLocalizations.of(context).getText(
+                              //         'ch1mfgpb' /* Disponible dans */,
+                              //       ),
+                              //       style: FlutterFlowTheme.of(context)
+                              //           .titleMedium
+                              //           .override(
+                              //             fontFamily: 'Readex Pro',
+                              //             color: Colors.white,
+                              //             fontWeight: FontWeight.w500,
+                              //           ),
+                              //     ),
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(8.0),
+                              //       child: Image.asset(
+                              //         'assets/images/playstore_(1).png',
+                              //         width: 90.0,
+                              //         height: 90.0,
+                              //         fit: BoxFit.cover,
+                              //       ),
+                              //     ),
+                              //   ].divide(SizedBox(height: 5.0)),
+                              // ),
                             ],
                           ),
                         ),
