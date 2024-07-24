@@ -137,7 +137,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Descubra na sua App Catálogo, os livros essenciais do bem-estar, saúde, sucesso e felicidade.',
     },
     'wkh1dyxd': {
-      'fr': 'Disponible dans',
+      'fr': 'Disponible sur AppStore',
       'de': 'Verfügbar in',
       'en': 'Available in',
       'es': 'Disponible en',
@@ -163,6 +163,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'our favorites',
       'es': 'nuestros favoritos',
       'pt': 'nossos favoritos',
+    },
+    'voir-plus': {
+      'fr': 'Voir Plus',
+      'de': 'Mehr sehen',
+      'en': 'See more',
+      'es': 'Ver más',
+      'pt': 'Ver mais',
+    },
+    'dernier-livre': {
+      'fr': 'Nos derniers livres',
+      'de': 'Unsere neuesten Bücher',
+      'en': 'Our latest books',
+      'es': 'Nuestros últimos libros',
+      'pt': 'Nossos últimos livros',
     },
     '6znxgwal': {
       'fr': 'https://www.santecorpsetesprit.com',

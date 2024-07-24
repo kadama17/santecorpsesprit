@@ -1,3 +1,5 @@
+import 'package:url_launcher/url_launcher.dart';
+
 import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
@@ -646,202 +648,209 @@ class _DetailsLivreWidgetState extends State<DetailsLivreWidget>
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    // FFButtonWidget(
-                    //   onPressed: () async {
-                    //     await launchURL(widget.livre!.liens[0]);
-                    //   },
-                    //   text: FFLocalizations.of(context).getText(
-                    //     '8wf81krl' /* www.amazon.fr */,
-                    //   ),
-                    //   options: FFButtonOptions(
-                    //     width: double.infinity,
-                    //     height: 40.0,
-                    //     padding:
-                    //         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    //     iconPadding:
-                    //         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    //     color: Color(0xFF232F3E),
-                    //     textStyle:
-                    //         FlutterFlowTheme.of(context).titleSmall.override(
-                    //               fontFamily: 'Readex Pro',
-                    //               color: Colors.white,
-                    //             ),
-                    //     elevation: 3.0,
-                    //     borderSide: BorderSide(
-                    //       color: Color(0xFF29154A),
-                    //       width: 1.0,
+                    FFButtonWidget(
+                      onPressed: () async {
+                        const url =
+                            'https://santecorpsetesprit.com'; // URL to be launched
+                        if (await canLaunch(url)) {
+                          await launch(url); // Launches the URL
+                        } else {
+                          throw 'Could not launch $url';
+                        }
+                      },
+                      text:
+                          'Visitez notre site', // Directly setting the button text
+                      options: FFButtonOptions(
+                        width: double.infinity, // Full width button
+                        height: 40.0, // Button height
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            0.0, 0.0, 0.0, 0.0), // Padding inside the button
+                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0,
+                            0.0, 0.0), // Padding for the icon (if any)
+                        color:
+                            Color(0xFF232F3E), // Background color of the button
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro', // Font family
+                                  color: Colors.white, // Text color
+                                ),
+                        elevation: 3.0, // Shadow elevation
+                        borderSide: BorderSide(
+                          color: Color(0xFF29154A), // Border color
+                          width: 1.0, // Border width
+                        ),
+                        borderRadius:
+                            BorderRadius.circular(8.0), // Rounded corners
+                      ),
+                    ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[1]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '8n0lcd0a' /*  www.chapitre.com  */,
                     //     ),
-                    //     borderRadius: BorderRadius.circular(8.0),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFF253F64),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Colors.white,
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
                     //   ),
-                    // ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[1]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '8n0lcd0a' /*  www.chapitre.com  */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF253F64),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.white,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[2]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '242wzucc' /*  www.leslibrairies.fr */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF006D9B),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Color(0xFF29154A),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[3]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '3wjg4wm3' /*  www.placedeslibraires.fr */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF268E6C),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.white,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[4]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '5c4t8fci' /* www.librairiesdelest.fr */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFD81A36),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Color(0xFF29154A),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[5]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '8290920t' /* www.parislibrairies.fr  */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFC4C4C4),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.white,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await launchURL(widget.livre!.liens[6]);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '4160fa3p' /* www. librairiesindependantes.c... */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF21BBEF),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.white,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[2]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '242wzucc' /*  www.leslibrairies.fr */,
+                    //     ),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFF006D9B),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Color(0xFF29154A),
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //   ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[3]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '3wjg4wm3' /*  www.placedeslibraires.fr */,
+                    //     ),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFF268E6C),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Colors.white,
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //   ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[4]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '5c4t8fci' /* www.librairiesdelest.fr */,
+                    //     ),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFFD81A36),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Color(0xFF29154A),
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //   ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[5]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '8290920t' /* www.parislibrairies.fr  */,
+                    //     ),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFFC4C4C4),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Colors.white,
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //   ),
+                    //   FFButtonWidget(
+                    //     onPressed: () async {
+                    //       await launchURL(widget.livre!.liens[6]);
+                    //     },
+                    //     text: FFLocalizations.of(context).getText(
+                    //       '4160fa3p' /* www. librairiesindependantes.c... */,
+                    //     ),
+                    //     options: FFButtonOptions(
+                    //       width: double.infinity,
+                    //       height: 40.0,
+                    //       padding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       iconPadding:
+                    //           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    //       color: Color(0xFF21BBEF),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).titleSmall.override(
+                    //                 fontFamily: 'Readex Pro',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 3.0,
+                    //       borderSide: BorderSide(
+                    //         color: Colors.white,
+                    //         width: 1.0,
+                    //       ),
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //   ),
                   ].divide(SizedBox(height: 5.0)),
                 ),
               ),
