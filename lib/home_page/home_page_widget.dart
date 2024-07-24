@@ -322,6 +322,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           fontFamily: 'Outfit',
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
+                          color: Colors
+                              .white, // Définir la couleur du texte en blanc
                         ),
                   ),
                   Padding(
