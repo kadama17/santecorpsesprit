@@ -334,49 +334,49 @@ class _DetailsLivreDocteurWidgetState extends State<DetailsLivreDocteurWidget>
                   },
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
-                child: Builder(
-                  builder: (context) {
-                    final liens = widget.livre?.liens?.toList() ?? [];
-                    return Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: List.generate(liens.length, (liensIndex) {
-                        final liensItem = liens[liensIndex];
-                        return FFButtonWidget(
-                          onPressed: () async {
-                            await launchURL('https://www.santeglobale.world/');
-                          },
-                          text: FFLocalizations.of(context).getText(
-                            '2la1c2rx' /* Disponible sur : www.santeglob... */,
-                          ),
-                          options: FFButtonOptions(
-                            width: double.infinity,
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).warning,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context).primary,
-                                ),
-                            elevation: 3.0,
-                            borderSide: BorderSide(
-                              color: Colors.white,
-                              width: 1.0,
-                            ),
-                            borderRadius: BorderRadius.circular(8.0),
-                          ),
-                        );
-                      }).divide(SizedBox(height: 5.0)),
-                    );
-                  },
-                ),
-              ),
+              //   Padding(
+              //     padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+              //     child: Builder(
+              //       builder: (context) {
+              //         final liens = widget.livre?.liens?.toList() ?? [];
+              //         return Column(
+              //           mainAxisSize: MainAxisSize.max,
+              //           children: List.generate(liens.length, (liensIndex) {
+              //             final liensItem = liens[liensIndex];
+              //             return FFButtonWidget(
+              //               onPressed: () async {
+              //                 await launchURL('https://www.santeglobale.world/');
+              //               },
+              //               text: FFLocalizations.of(context).getText(
+              //                 '2la1c2rx' /* Disponible sur : www.santeglob... */,
+              //               ),
+              //               options: FFButtonOptions(
+              //                 width: double.infinity,
+              //                 height: 40.0,
+              //                 padding: EdgeInsetsDirectional.fromSTEB(
+              //                     0.0, 0.0, 0.0, 0.0),
+              //                 iconPadding: EdgeInsetsDirectional.fromSTEB(
+              //                     0.0, 0.0, 0.0, 0.0),
+              //                 color: FlutterFlowTheme.of(context).warning,
+              //                 textStyle: FlutterFlowTheme.of(context)
+              //                     .titleSmall
+              //                     .override(
+              //                       fontFamily: 'Readex Pro',
+              //                       color: FlutterFlowTheme.of(context).primary,
+              //                     ),
+              //                 elevation: 3.0,
+              //                 borderSide: BorderSide(
+              //                   color: Colors.white,
+              //                   width: 1.0,
+              //                 ),
+              //                 borderRadius: BorderRadius.circular(8.0),
+              //               ),
+              //             );
+              //           }).divide(SizedBox(height: 5.0)),
+              //         );
+              //       },
+              //     ),
+              //   ),
             ],
           ),
         ),
