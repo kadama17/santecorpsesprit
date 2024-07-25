@@ -24,47 +24,37 @@
 		<string>pt</string>
 		<string>de</string>
 	</array>
-
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <!--FF_REVERSED_CLIENT_ID-->
-                
-            </array>
-        </dict>
-
-        <dict>
-        <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLName</key>
-        <string>santecorpsesprit.com</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-        <string>santecorpsesprit</string>
-        </array>
-        </dict>
-    </array>
-    <key>FlutterDeepLinkingEnabled</key>
-    <true/>
-
-
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<!--FF_REVERSED_CLIENT_ID-->
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>santecorpsesprit.com</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>santecorpsesprit</string>
+			</array>
+		</dict>
+	</array>
+	<key>FlutterDeepLinkingEnabled</key>
+	<true/>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-
-
-
-
-
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -84,6 +74,44 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon20</string>
+				<string>Icon29</string>
+				<string>Icon40</string>
+				<string>Icon60</string>
+				<string>Icon76</string>
+				<string>Icon83.5</string>
+				<string>Icon120</string>
+				<string>Icon152</string>
+				<string>Icon167</string>
+				<string>Icon180</string>
+				<string>Icon1024</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CFBundleIcons~ipad</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Icon20</string>
+				<string>Icon29</string>
+				<string>Icon40</string>
+				<string>Icon76</string>
+				<string>Icon83.5</string>
+				<string>Icon120</string>
+				<string>Icon152</string>
+				<string>Icon167</string>
+				<string>Icon180</string>
+				<string>Icon1024</string>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>
