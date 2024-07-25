@@ -81,38 +81,65 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Icon20.png</string>
-				<string>Icon29.png</string>
-				<string>Icon40.png</string>
-				<string>Icon60.png</string>
-				<string>Icon76.png</string>
-				<string>Icon83.5.png</string>
-				<string>Icon120.png</string>
-				<string>Icon152.png</string>
-				<string>Icon167.png</string>
-				<string>Icon180.png</string>
-				<string>Icon1024.png</string>
+				<string>Icon-App-20x20@1x.png</string>
+				<string>Icon-App-20x20@2x.png</string>
+				<string>Icon-App-20x20@3x.png</string>
+				<string>Icon-App-29x29@1x.png</string>
+				<string>Icon-App-29x29@2x.png</string>
+				<string>Icon-App-29x29@3x.png</string>
+				<string>Icon-App-40x40@1x.png</string>
+				<string>Icon-App-40x40@2x.png</string>
+				<string>Icon-App-40x40@3x.png</string>
+				<string>Icon-App-50x50@1x.png</string>
+				<string>Icon-App-50x50@2x.png</string>
+				<string>Icon-App-57x57@1x.png</string>
+				<string>Icon-App-57x57@2x.png</string>
+				<string>Icon-App-60x60@2x.png</string>
+				<string>Icon-App-60x60@3x.png</string>
+				<string>Icon-App-72x72@1x.png</string>
+				<string>Icon-App-72x72@2x.png</string>
+				<string>Icon-App-76x76@1x.png</string>
+				<string>Icon-App-76x76@2x.png</string>
+				<string>Icon-App-83.5x83.5@2x.png</string>
+				<string>Icon-App-152x152@2x.png</string>
+				<string>Icon-App-167x167@2x.png</string>
+				<string>Icon-App-1024x1024@1x.png</string>
 			</array>
 		</dict>
 	</dict>
+	
 	<key>CFBundleIcons~ipad</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Icon20</string>
-				<string>Icon29</string>
-				<string>Icon40</string>
-				<string>Icon76</string>
-				<string>Icon83.5</string>
-				<string>Icon120</string>
-				<string>Icon152</string>
-				<string>Icon167</string>
-				<string>Icon180</string>
-				<string>Icon1024</string>
+				<string>Icon-App-20x20@1x.png</string>
+				<string>Icon-App-20x20@2x.png</string>
+				<string>Icon-App-20x20@3x.png</string>
+				<string>Icon-App-29x29@1x.png</string>
+				<string>Icon-App-29x29@2x.png</string>
+				<string>Icon-App-29x29@3x.png</string>
+				<string>Icon-App-40x40@1x.png</string>
+				<string>Icon-App-40x40@2x.png</string>
+				<string>Icon-App-40x40@3x.png</string>
+				<string>Icon-App-50x50@1x.png</string>
+				<string>Icon-App-50x50@2x.png</string>
+				<string>Icon-App-57x57@1x.png</string>
+				<string>Icon-App-57x57@2x.png</string>
+				<string>Icon-App-60x60@2x.png</string>
+				<string>Icon-App-60x60@3x.png</string>
+				<string>Icon-App-72x72@1x.png</string>
+				<string>Icon-App-72x72@2x.png</string>
+				<string>Icon-App-76x76@1x.png</string>
+				<string>Icon-App-76x76@2x.png</string>
+				<string>Icon-App-83.5x83.5@2x.png</string>
+				<string>Icon-App-152x152@2x.png</string>
+				<string>Icon-App-167x167@2x.png</string>
+				<string>Icon-App-1024x1024@1x.png</string>
 			</array>
 		</dict>
 	</dict>
+	
 </dict>
 </plist>
