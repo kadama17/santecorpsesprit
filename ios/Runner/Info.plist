@@ -24,8 +24,7 @@
 		<string>pt</string>
 		<string>de</string>
 	</array>
-	<key>CFBundleIconName</key>
-	<string>AppIcon</string>
+
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
@@ -82,17 +81,17 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Icon20</string>
-				<string>Icon29</string>
-				<string>Icon40</string>
-				<string>Icon60</string>
-				<string>Icon76</string>
-				<string>Icon83.5</string>
-				<string>Icon120</string>
-				<string>Icon152</string>
-				<string>Icon167</string>
-				<string>Icon180</string>
-				<string>Icon1024</string>
+				<string>Icon20.png</string>
+				<string>Icon29.png</string>
+				<string>Icon40.png</string>
+				<string>Icon60.png</string>
+				<string>Icon76.png</string>
+				<string>Icon83.5.png</string>
+				<string>Icon120.png</string>
+				<string>Icon152.png</string>
+				<string>Icon167.png</string>
+				<string>Icon180.png</string>
+				<string>Icon1024.png</string>
 			</array>
 		</dict>
 	</dict>
