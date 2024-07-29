@@ -36,7 +36,15 @@ if (keystorePropertiesFile.exists()) {
 android {
     compileSdkVersion 33
     
-
+   signingConfigs {
+        release {
+            storeFile file('../santecorpsetesprit.jks')
+            storePassword 'A7mabindi'
+            keyAlias 'santecorspetesprit'
+            keyPassword 'A7mabindi'
+        }
+    }
+    
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
